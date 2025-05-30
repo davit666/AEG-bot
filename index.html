@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Webpage for AEG-rearrangement.">
+  <meta name="keywords" content="scene-graph LLM">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LLM-enhanced Scene Graph Learning for Household Rearrangement</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">LLM-enhanced Scene Graph Learning for Household Rearrangement</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://davit666.github.io/AEG-rearrangement/">Wenhao Li</a><sup>1,*</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="author-block">
+              <a href="https://davit666.github.io/AEG-rearrangement/">Zhiyuan Yu</a><sup>1,*</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="author-block">
+              <a href="https://davit666.github.io/AEG-rearrangement/">Qijin She</a><sup>1,*</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="author-block">
+              <a href="https://davit666.github.io/AEG-rearrangement/">Zhinan Yu</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="author-block">
+              <a href="https://davit666.github.io/AEG-rearrangement/">Yuqing Lan</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="author-block">
+              <a href="https://www.zhuchenyang.net">Chenyang Zhu</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="author-block">
+              <a href="https://csse.szu.edu.cn/staff/ruizhenhu">Ruizhen Hu</a><sup>2,†</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="author-block">
+              <a href="https://kevinkaixu.net">Kai Xu</a><sup>1,†</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup> National University of Defense Technology&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="author-block"><sup>2</sup>Shenzhen University</span>
+            <span class="eql-cntrb" style="display: block;">
+              <small><sup>*</sup>Indicates Equal Contribution,&nbsp;</small>
+              <small><sup>†</sup>Corresponding Author</small>
+            </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2408.12093.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2408.12093"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://davit666.github.io/AEG-rearrangement/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/teaser/teaser_00.jpg" alt="Description of Image" style="width: 100%; height: auto; border: none;">
+      <h2 class="subtitle has-text-centered"></h2>
+        We propose a LLM-enhanced scene graph learning method to construct affordance-enhanced graph (AEG) 
+        and perform task planning for house-tidying rearrangement.
+      <h2 class="subtitle has-text-centered"></h2>
+          
+      <video autoplay loop muted controls width="1000">
+        <source src="./static/videos/aeg-rearrangement.mov" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/teaser/teaser_00.jpg" alt="Description of Image" style="width: 100%; height: auto; border: none;">
+    </div>
+  </div>
+</section> -->
+
+<section class="hero is-light is-small">
+  <div class="container is-max-desktop">
+    <div id="results-carousel" class="carousel results-carousel"></div>
+      <!-- Abstract. -->
+      <div class="hero-body"></div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              The household rearrangement task involves spotting misplaced objects in
+              a scene and accommodate them with proper places. It depends both on
+              common-sense knowledge on the objective side and human user preference
+              on the subjective side. 
+            </p>
+            <p>
+              In achieving such task, we propose to mine object
+              functionality with user preference alignment directly from the scene itself,
+              without relying on human intervention. To do so, we work with scene graph
+              representation and propose LLM-enhanced scene graph learning which
+              transforms the input scene graph into an affordance-enhanced graph (AEG)
+              with information-enhanced nodes and newly discovered edges (relations). In
+              AEG, the nodes corresponding to the receptacle objects are augmented with
+              context-induced affordance which encodes what kind of carriable objects can
+              be placed on it. New edges are discovered with newly discovered non-local
+              relations. 
+            </p>
+            <p>
+              With AEG, we perform task planning for scene rearrangement by
+              detecting misplaced carriables and determining a proper placement for each
+              of them. We test our method by implementing a tiding robot in simulator
+              and perform evaluation on a new benchmark we build. Extensive evalua-
+              tions demonstrate that our method achieves state-of-the-art performance
+              on misplacement detection and the following rearrangement planning.
+            </p>
+          </div>
+          <h2 class="title is-3">   </h2>
+        </div>
+      </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </div>
+</section>
+
+
+<!-- <div class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Pipeline</h2>
+        <img src="./static/images/pipeline/pipeline_00.jpg" alt="Description of Image" style="width: 100%; height: auto; border: none;">
+    <div class="content has-text-justified">
+      <p>
+        Given a scene graph (SG) with key frames, we utilize Large Language Model (LLM) to perform context-induced affordance analysis for all objects in the scene. 
+        These affordances are incorporated into the SG, updating the nodes and edges to construct an Affordance Enhanced Graph (AEG). We then evaluate
+        the appropriateness of the current placements of all carriable objects in the AEG based on the affordance information of the objects and their receptacles, 
+        identifying misplaced items. For each misplaced carriable, we rate the suitability of each receptacle in the AEG as a placement target. The top k suitable
+        receptacles are selected as candidates, and their affordances are retrieved as prompt to the LLM to generate the placement decision.
+      </p>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div class="section"></div>
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Visual Results</h2>
+    <h3 class="title is-4">Simulated Environment</h3>
+        <img src="./static/images/Result_v1/Result_v1_00.jpg" alt="Description of Image" style="width: 100%; height: auto; border: none;">
+    <h3 class="title is-4">Real Scene</h3>
+        <img src="./static/images/Result_v2-realscene/Result_v2-realscene_00.jpg" alt="Description of Image" style="width: 100%; height: auto; border: none;">
+    
+  </div>
+</div> -->
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{li2024llm,
+      title={LLM-enhanced Scene Graph Learning for Household Rearrangement},
+      author={Li, Wenhao and Yu, Zhiyuan and She, Qijin and Yu, Zhinan and Lan, Yuqing and Zhu, Chenyang and Hu, Ruizhen and Xu, Kai},
+      journal={arXiv preprint arXiv:2408.12093},
+      year={2024}
+    }</code></pre>
+  </div>
+</section> -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Website template from <a
+            href="https://sisidai.github.io/InterFusion/">InterFusion</a>. Thanks for the effort.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
