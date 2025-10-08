@@ -146,7 +146,7 @@
       <h2 class="subtitle has-text-centered"></h2>
           
       <video autoplay loop muted controls width="1000">
-        <source src="./static/videos/aeg-bot-rearrangement.mp4" type="video/mp4">
+        <source src="./static/videos/aeg_bot_rearrangement.mp4" type="video/mp4">
       </video>
     </div>
   </div>
@@ -171,30 +171,25 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              The household rearrangement task involves spotting misplaced objects in
-              a scene and accommodate them with proper places. It depends both on
-              common-sense knowledge on the objective side and human user preference
-              on the subjective side. 
+             We present <b>AEG-bot</b>, a mobile humanoid robot system for end-to-end indoor scene rearrangement. 
+             Unlike simulation-based approaches that rely on strong assumptions such as full observability or simplified manipulation,
+             AEG-bot is designed to function autonomously in complex, previously unseen real-world environments.
             </p>
             <p>
-              In achieving such task, we propose to mine object
-              functionality with user preference alignment directly from the scene itself,
-              without relying on human intervention. To do so, we work with scene graph
-              representation and propose LLM-enhanced scene graph learning which
-              transforms the input scene graph into an affordance-enhanced graph (AEG)
-              with information-enhanced nodes and newly discovered edges (relations). In
-              AEG, the nodes corresponding to the receptacle objects are augmented with
-              context-induced affordance which encodes what kind of carriable objects can
-              be placed on it. New edges are discovered with newly discovered non-local
-              relations. 
+              Household rearrangement requires a robot to detect misplaced objects and reason about their appropriate placements — a process 
+              that combines common-sense knowledge with user preference alignment. 
+              To enable such reasoning, we propose <b>LLM-enhanced scene graph learning</b>, 
+              which transforms an initial scene graph into an <b>Affordance Enhanced Graph (AEG)</b> with enriched object nodes and newly 
+              discovered contextual relations. 
+              In this representation, receptacle nodes are augmented with context-induced affordances that capture what kinds of objects 
+              can be placed, supporting effective task planning for rearrangement.
             </p>
             <p>
-              With AEG, we perform task planning for scene rearrangement by
-              detecting misplaced carriables and determining a proper placement for each
-              of them. We test our method by implementing a tiding robot in simulator
-              and perform evaluation on a new benchmark we build. Extensive evalua-
-              tions demonstrate that our method achieves state-of-the-art performance
-              on misplacement detection and the following rearrangement planning.
+              Building on this capability, AEG-bot unifies <b> active exploration, RGB-D scene reconstruction, 
+              scene graph extraction, and autonomous task planning & execution</b> into a single pipeline. 
+              With this design, the robot can perceive novel environments, identify misplaced objects, 
+              infer suitable placements, and carry out the rearrangement end-to-end—moving a step closer to 
+              practical and intelligent household robotics.
             </p>
           </div>
           <h2 class="title is-3">   </h2>
