@@ -141,10 +141,6 @@
       </video>
       <h2 class="subtitle has-text-centered"></h2>
         We present AEG-bot, a mobile humanoid robot system designed for end-to-end indoor scene rearrangement.
-        Upon entering an unknown environment, the robot autonomously performs RGB-D reconstruction and extracts a scene graph.
-        This graph is then transformed into an Affordance Enhanced Graph (AEG), where affordances and contextual relations are enriched. 
-        By leveraging the AEG together with selected RGB keyframes, a multi-modal foundation model is prompted to plan and execute the rearrangement task.
-        With this framework, AEG-bot can detect misplaced objects, infer their proper placements, and autonomously complete the rearrangement, achieving robust and intelligent scene organization.
       <h2 class="subtitle has-text-centered"></h2>
       <img src="./static/images/teaser.jpg" alt="Description of Image" style="width: 100%; height: auto; border: none;"> 
       
@@ -202,21 +198,42 @@
 </section>
 
 
-<!-- <div class="section">
+
+
+<div class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-3">Pipeline</h2>
-        <img src="./static/images/pipeline/pipeline_00.jpg" alt="Description of Image" style="width: 100%; height: auto; border: none;">
+    <img src="./static/images/real-robot_pipeline.jpg" alt="Description of Image" style="width: 100%; height: auto; border: none;">
     <div class="content has-text-justified">
       <p>
-        Given a scene graph (SG) with key frames, we utilize Large Language Model (LLM) to perform context-induced affordance analysis for all objects in the scene. 
-        These affordances are incorporated into the SG, updating the nodes and edges to construct an Affordance Enhanced Graph (AEG). We then evaluate
-        the appropriateness of the current placements of all carriable objects in the AEG based on the affordance information of the objects and their receptacles, 
-        identifying misplaced items. For each misplaced carriable, we rate the suitability of each receptacle in the AEG as a placement target. The top k suitable
-        receptacles are selected as candidates, and their affordances are retrieved as prompt to the LLM to generate the placement decision.
+        Upon entering an unknown environment, the robot executes active exploration and autonomously performs RGB-D reconstruction and extracts a scene graph (A).
+        This graph is then transformed into an Affordance Enhanced Graph (AEG), where affordances and contextual relations are enriched (B). 
+        By leveraging the AEG together with selected RGB keyframes, a multi-modal foundation model is prompted to plan and execute the rearrangement task.
+        With this framework, AEG-bot can detect misplaced objects, infer their proper placements (C), and autonomously complete the rearrangement, achieving robust and intelligent scene organization (D).
       </p>
     </div>
+
+    <!-- Two videos side by side -->
+    <div class="columns is-centered">
+      <div class="column">
+        <video autoplay loop muted playsinline controls width="100%">
+          <source src="./static/videos/dual-arm-rearr-dyna.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="column">
+        <video autoplay loop muted playsinline controls width="100%">
+          <source src="./static/videos/dual-arm-rearr-stat.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <!-- End two videos -->
+
   </div>
-</div> -->
+</div>
+
+
 
 <!-- <div class="section"></div>
   <div class="container is-max-desktop">
