@@ -338,6 +338,62 @@
   </div>
 </section>
 
+<!-- AEG Section -->
+<div class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">AEG</h2>
+    <img src="./static/images/aeg.jpg" 
+         alt="Affordance Enhanced Graph" 
+         style="width: 100%; height: auto; border: none;">
+    <div class="content has-text-justified">
+      <p>
+        We start from an initial scene graph constructed from an RGB-D sequence and perform context-induced affordance analysis through the following steps:
+      </p>
+      <ol type="a">
+        <li><b>Initial scene graph.</b> Build an initial scene graph from the RGB-D sequence.</li>
+        <li><b>Textual context.</b> For each object node, extract contextual information from its neighboring nodes in the graph to obtain a textual description of local relations.</li>
+        <li><b>Visual context.</b> Select key frames that best represent each object and query a Vision–Language Model (VLM) to generate visual context.</li>
+        <li><b>Global context.</b> Construct an object–area–room hierarchy, assign key frames to each area, and use a VLM to produce area-level descriptions; infer semantic edges between spatially distant but functionally related objects.</li>
+        <li><b>LLM reasoning & graph update.</b> Integrate textual, visual, and global contexts into a unified prompt to the LLM, which performs affordance reasoning and updates the scene graph into an <b>Affordance Enhanced Graph (AEG)</b>.</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<!-- Task Planner Section -->
+<div class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Task Planner</h2>
+    <img src="./static/images/task-planner.jpg" 
+         alt="Task Planner" 
+         style="width: 100%; height: auto; border: none;">
+    <div class="content has-text-justified">
+      <p>
+        We adopt a <b>multi-query retrieval-augmented approach</b> for instructed task planning, 
+        enabling the robot to generate reliable placement decisions:
+      </p>
+      <ol type="a">
+        <li>
+          <b>Affordance databases.</b> From the context-induced affordances in the AEG, 
+          an LLM extracts keywords to construct three specialized databases: 
+          a <em>Target Database</em>, <em>Location Database</em>, and <em>Scenario Database</em>.
+        </li>
+        <li>
+          <b>Query reformulation and retrieval.</b> For each carriable object to be arranged, 
+          the LLM reformulates the placement query into three query types corresponding to 
+          the three databases. Semantic similarity search retrieves candidate receptacles, 
+          and an additional LLM-based filtering step removes low-relevance results.
+        </li>
+        <li>
+          <b>Candidate selection.</b> The top-<i>k</i> candidates with the highest aggregated 
+          similarity scores are selected as the final placement options, 
+          guiding the robot’s action sequence in instructed task execution.
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+
 
 
 <section class="section">
