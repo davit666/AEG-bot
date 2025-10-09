@@ -30,12 +30,13 @@ $(document).ready(function() {
     });
 
     var options = {
-			slidesToScroll: 1,
-			slidesToShow: 3,
-			loop: true,
-			infinite: true,
-			autoplay: false,
-			autoplaySpeed: 3000,
+			  slidesToScroll: 1,
+        slidesToShow: 3,
+        loop: true,
+        autoplay: true,          // ✅ 打开自动播放
+        autoplaySpeed: 4000,     // ✅ 自动播放间隔
+        navigation: true,        // ✅ 开启左右箭头
+        pagination: true,        // ✅ 开启底部小圆点
     }
 
 		// Initialize all div with carousel class
