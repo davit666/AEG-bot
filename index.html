@@ -233,94 +233,108 @@
   </div>
 </div>
 
-<div class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">Instructed Task Planning</h2>
-    <div class="content has-text-justified">
-      <p>
-        Beyond autonomous rearrangement, <b>AEG-bot</b> can also perform 
-        <b>instructed task planning</b>. 
-        By following natural-language instructions, the robot leverages its 
-        perception and reasoning capabilities to execute diverse household tasks.
-      </p>
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+
+      <!-- 标题和文字 -->
+      <h2 class="title is-3">Instructed Task Planning</h2>
+      <div class="content has-text-justified mb-5">
+        <p>
+          Beyond autonomous rearrangement, <b>AEG-bot</b> can also perform 
+          <b>instructed task planning</b>. 
+          By following natural-language instructions, the robot leverages its 
+          perception and reasoning capabilities to execute diverse household tasks.
+        </p>
+      </div>
+
+      <!-- 轮播 -->
+      <div id="task-carousel" class="carousel results-carousel"
+           data-slides-to-show="1"
+           data-slides-to-scroll="1"
+           data-loop="true"
+           data-autoplay="true"
+           data-autoplay-speed="4000"
+           data-navigation="true"
+           data-pagination="true">
+
+        <!-- Item 1 -->
+        <div class="item has-text-centered">
+          <video autoplay loop muted playsinline controls height="100%">
+            <source src="./static/videos/sort.mp4" type="video/mp4">
+          </video>
+          <p class="has-text-grey mt-2 is-size-6">
+            Sort laundry into lights and darks
+          </p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="item has-text-centered">
+          <video autoplay loop muted playsinline controls height="100%">
+            <source src="./static/videos/send-milk-box.mp4" type="video/mp4">
+          </video>
+          <p class="has-text-grey mt-2 is-size-6">
+            Recycle drink cans, throw away trash, put away bags and utensils
+          </p>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="item has-text-centered">
+          <video autoplay loop muted playsinline controls height="100%">
+            <source src="./static/videos/serve.mp4" type="video/mp4">
+          </video>
+          <p class="has-text-grey mt-2 is-size-6">
+            Recycle drink cans, put away all other items where they belong
+          </p>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="item has-text-centered">
+          <video autoplay loop muted playsinline controls height="100%">
+            <source src="./static/videos/fruit.mp4" type="video/mp4">
+          </video>
+          <p class="has-text-grey mt-2 is-size-6">
+            Place clothes into the laundry basket
+          </p>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="item has-text-centered">
+          <video autoplay loop muted playsinline controls height="100%">
+            <source src="./static/videos/trash.mp4" type="video/mp4">
+          </video>
+          <p class="has-text-grey mt-2 is-size-6">
+            Toss drink cans into the recycling bin
+          </p>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="item has-text-centered">
+          <video autoplay loop muted playsinline controls height="100%">
+            <source src="./static/videos/piano.mp4" type="video/mp4">
+          </video>
+          <p class="has-text-grey mt-2 is-size-6">
+            Put toys into the drawer
+          </p>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="item has-text-centered">
+          <video autoplay loop muted playsinline controls height="100%">
+            <source src="./static/videos/serve_water.mp4" type="video/mp4">
+          </video>
+          <p class="has-text-grey mt-2 is-size-6">
+            Put toys into the drawer
+          </p>
+        </div>
+
+      </div>
+      <!-- /轮播 -->
+
     </div>
-
-    <!-- Carousel -->
-    <div id="task-carousel" class="carousel">
-      <!-- Item 1 -->
-      <div class="item has-text-centered">
-        <video autoplay loop muted playsinline controls width="80%">
-          <source src="./static/videos/fruit.mp4" type="video/mp4">
-        </video>
-        <p style="color: gray; font-size: 0.9em; margin-top: 0.5em;">
-          Sort laundry into lights and darks
-        </p>
-      </div>
-
-      <!-- Item 2 -->
-      <div class="item has-text-centered">
-        <video autoplay loop muted playsinline controls width="80%">
-          <source src="./static/videos/serve.mp4" type="video/mp4">
-        </video>
-        <p style="color: gray; font-size: 0.9em; margin-top: 0.5em;">
-          Recycle drink cans, throw away trash, put away bags and utensils
-        </p>
-      </div>
-
-      <!-- Item 3 -->
-      <div class="item has-text-centered">
-        <video autoplay loop muted playsinline controls width="80%">
-          <source src="./static/videos/send-milk-box.mp4" type="video/mp4">
-        </video>
-        <p style="color: gray; font-size: 0.9em; margin-top: 0.5em;">
-          Recycle drink cans, put away all other items where they belong
-        </p>
-      </div>
-
-      <!-- Item 4 -->
-      <div class="item has-text-centered">
-        <video autoplay loop muted playsinline controls width="80%">
-          <source src="./static/videos/sort.mp4" type="video/mp4">
-        </video>
-        <p style="color: gray; font-size: 0.9em; margin-top: 0.5em;">
-          Place clothes into the laundry basket
-        </p>
-      </div>
-
-      <!-- Item 5 -->
-      <div class="item has-text-centered">
-        <video autoplay loop muted playsinline controls width="80%">
-          <source src="./static/videos/trash.mp4" type="video/mp4">
-        </video>
-        <p style="color: gray; font-size: 0.9em; margin-top: 0.5em;">
-          Toss drink cans into the recycling bin
-        </p>
-      </div>
-
-      <!-- Item 6 -->
-      <div class="item has-text-centered">
-        <video autoplay loop muted playsinline controls width="80%">
-          <source src="./static/videos/piano.mp4" type="video/mp4">
-        </video>
-        <p style="color: gray; font-size: 0.9em; margin-top: 0.5em;">
-          Put toys into the drawer
-        </p>
-      </div>
-
-      <!-- Item 7 -->
-      <div class="item has-text-centered">
-        <video autoplay loop muted playsinline controls width="80%">
-          <source src="./static/videos/serve_water.mp4" type="video/mp4">
-        </video>
-        <p style="color: gray; font-size: 0.9em; margin-top: 0.5em;">
-          Put toys into the drawer
-        </p>
-      </div>
-
-    </div>
-    <!-- /Carousel -->
   </div>
-</div>
+</section>
+
 
 
 
