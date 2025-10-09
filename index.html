@@ -243,7 +243,13 @@
           Beyond autonomous rearrangement, <b>AEG-bot</b> can also perform 
           <b>instructed task planning</b>. 
           By following natural-language instructions, the robot leverages its 
-          perception and reasoning capabilities to execute diverse household tasks.
+          perception and reasoning capabilities to execute diverse household tasks. 
+          Specifically, it employs a <b>retrieval-augmented generation (RAG)</b> strategy to 
+          extract task-relevant nodes from the <b>Affordance Enhanced Graph (AEG)</b> and 
+          feeds them, together with scene context, into a multi-modal foundation model. 
+          The model then generates a sequence of high-level task steps, which are 
+          grounded into <b>action primitives</b> that the robot can execute to accomplish 
+          the instructed task.
         </p>
       </div>
 
@@ -263,7 +269,7 @@
             <source src="./static/videos/sort.mp4" type="video/mp4">
           </video>
           <p class="has-text-grey mt-2 is-size-6">
-            Sort laundry into lights and darks
+            Sort fruits into the black basket and bottles into the cartons
           </p>
         </div>
 
@@ -273,7 +279,7 @@
             <source src="./static/videos/send-milk-box.mp4" type="video/mp4">
           </video>
           <p class="has-text-grey mt-2 is-size-6">
-            Recycle drink cans, throw away trash, put away bags and utensils
+            Help me get a milk and the delivery box on the table 
           </p>
         </div>
 
@@ -283,7 +289,7 @@
             <source src="./static/videos/serve.mp4" type="video/mp4">
           </video>
           <p class="has-text-grey mt-2 is-size-6">
-            Recycle drink cans, put away all other items where they belong
+            Serve fruits to the plates on the dining table
           </p>
         </div>
 
@@ -293,7 +299,7 @@
             <source src="./static/videos/fruit.mp4" type="video/mp4">
           </video>
           <p class="has-text-grey mt-2 is-size-6">
-            Place clothes into the laundry basket
+            Put every thing on the table into the basket
           </p>
         </div>
 
@@ -303,7 +309,7 @@
             <source src="./static/videos/trash.mp4" type="video/mp4">
           </video>
           <p class="has-text-grey mt-2 is-size-6">
-            Toss drink cans into the recycling bin
+            Throw all trash on the table to the trash can
           </p>
         </div>
 
@@ -313,7 +319,7 @@
             <source src="./static/videos/piano.mp4" type="video/mp4">
           </video>
           <p class="has-text-grey mt-2 is-size-6">
-            Put toys into the drawer
+            Play the piano
           </p>
         </div>
 
@@ -323,7 +329,7 @@
             <source src="./static/videos/serve_water.mp4" type="video/mp4">
           </video>
           <p class="has-text-grey mt-2 is-size-6">
-            Put toys into the drawer
+            Serve me a bottle of water
           </p>
         </div>
 
