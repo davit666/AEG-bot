@@ -34,7 +34,7 @@ $(document).ready(function() {
         slidesToShow: 3,
         loop: true,
         autoplay: true,          // ✅ 打开自动播放
-        autoplaySpeed: 4000,     // ✅ 自动播放间隔
+        autoplaySpeed: 30000,     // ✅ 自动播放间隔
         navigation: true,        // ✅ 开启左右箭头
         pagination: false,        // ✅ 开启底部小圆点
     }
